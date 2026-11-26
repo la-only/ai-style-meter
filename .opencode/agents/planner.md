@@ -3,8 +3,10 @@ description: Постановщик-планировщик. Ведёт полн�
 mode: all
 permission:
   edit:
-    docs/**: allow
-    '*': deny
+    "docs/**": allow
+    "Makefile": allow
+    "README.md": allow
+    "*": deny
   bash:
     '*': deny
     git status*: allow
