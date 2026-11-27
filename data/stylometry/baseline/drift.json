@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "author": "chekhov",
+  "files": [
+    {
+      "source_file": "01_skuchnaya_istoriya.txt",
+      "n_chunks": 91,
+      "mean_distance": 0.7987476510322247
+    },
+    {
+      "source_file": "02_step.txt",
+      "n_chunks": 140,
+      "mean_distance": 0.7868319528820072
+    },
+    {
+      "source_file": "03_palata_6.txt",
+      "n_chunks": 80,
+      "mean_distance": 0.7661863021331141
+    },
+    {
+      "source_file": "04_v_ovrage.txt",
+      "n_chunks": 58,
+      "mean_distance": 0.7797373149412965
+    },
+    {
+      "source_file": "05_duel.txt",
+      "n_chunks": 152,
+      "mean_distance": 0.7842154838727906
+    },
+    {
+      "source_file": "06_tri_goda.txt",
+      "n_chunks": 134,
+      "mean_distance": 0.7294729701385844
+    }
+  ]
+}
