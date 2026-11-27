@@ -20,7 +20,7 @@ lint:
 	ruff check .
 
 typecheck:
-	mypy scripts tests src
+	mypy scripts tests stylometry
 
 check: lint typecheck test
 

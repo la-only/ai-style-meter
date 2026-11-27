@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "report_version": "1.0.0",
+  "status": "frozen_before_chekhov_held_out_evaluation",
+  "thresholds": {
+    "auc_min": 0.9,
+    "mannwhitney_p_max": 0.01
+  },
+  "split": {
+    "method": "whole_files_last_sorted",
+    "held_out_fraction": 0.25,
+    "chunk_words": 200
+  },
+  "tuning_split": "train",
+  "held_out_used_for_tuning": false,
+  "change_policy": "Any threshold change requires a greater report_version; held_out tuning is forbidden."
+}

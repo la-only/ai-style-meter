@@ -1,0 +1,127 @@
+{
+  "schema_version": "1.0",
+  "report_version": "1.0.0",
+  "author": "chekhov",
+  "thresholds": {
+    "auc_min": 0.9,
+    "mannwhitney_p_max": 0.01
+  },
+  "tuning_split": "train",
+  "split": {
+    "method": "whole_files_last_sorted",
+    "held_out_fraction": 0.25,
+    "author": {
+      "all": [
+        "01_skuchnaya_istoriya.txt",
+        "02_step.txt",
+        "03_palata_6.txt",
+        "04_v_ovrage.txt",
+        "05_duel.txt",
+        "06_tri_goda.txt"
+      ],
+      "train": [
+        "01_skuchnaya_istoriya.txt",
+        "02_step.txt",
+        "03_palata_6.txt",
+        "04_v_ovrage.txt"
+      ],
+      "held_out": [
+        "05_duel.txt",
+        "06_tri_goda.txt"
+      ]
+    },
+    "others": {
+      "dostoevsky": {
+        "train": [
+          "01_bednye_lyudi.txt",
+          "02_dvoynik.txt",
+          "03_belye_nochi.txt"
+        ],
+        "held_out": [
+          "04_zapiski_iz_podpolya.txt",
+          "05_igrok.txt"
+        ]
+      },
+      "technical": {
+        "train": [
+          "01_arifmetika.txt",
+          "02_algebra.txt",
+          "03_geometriya.txt",
+          "04_mechanika.txt"
+        ],
+        "held_out": [
+          "05_fizika.txt",
+          "06_himiya.txt"
+        ]
+      }
+    }
+  },
+  "passport": {
+    "n_chunks": 229,
+    "training_files": [
+      "01_skuchnaya_istoriya.txt",
+      "03_palata_6.txt",
+      "04_v_ovrage.txt"
+    ],
+    "excluded_files": [
+      "02_step.txt"
+    ]
+  },
+  "discriminator": {
+    "model": "LogisticRegression",
+    "analyzer": "char",
+    "ngram_range": [
+      3,
+      5
+    ],
+    "auc": 0.9897646557764437,
+    "train_files": [
+      "01_arifmetika.txt",
+      "01_bednye_lyudi.txt",
+      "01_skuchnaya_istoriya.txt",
+      "02_algebra.txt",
+      "02_dvoynik.txt",
+      "03_belye_nochi.txt",
+      "03_geometriya.txt",
+      "03_palata_6.txt",
+      "04_mechanika.txt",
+      "04_v_ovrage.txt"
+    ],
+    "held_out_files": [
+      "04_zapiski_iz_podpolya.txt",
+      "05_duel.txt",
+      "05_fizika.txt",
+      "05_igrok.txt",
+      "06_himiya.txt",
+      "06_tri_goda.txt"
+    ],
+    "n_train_chunks": 804,
+    "n_held_out_chunks": 795
+  },
+  "style_distance": {
+    "mannwhitney": {
+      "alternative": "less",
+      "statistic": 31699.0,
+      "p_value": 3.2686575708710404e-40
+    },
+    "n_author_chunks": 286,
+    "n_other_chunks": 509
+  },
+  "golden": {
+    "reviewed_ids": [],
+    "excluded_unreviewed_ids": [
+      "chekhov-step-001"
+    ],
+    "metrics": []
+  },
+  "artifacts": {
+    "style": "style.json",
+    "drift": "drift.json"
+  },
+  "acceptance": {
+    "auc_passed": true,
+    "mannwhitney_passed": true,
+    "unreviewed_golden_excluded": true
+  },
+  "passed": true
+}

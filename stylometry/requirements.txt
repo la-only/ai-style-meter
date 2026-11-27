@@ -1,0 +1,7 @@
+numpy>=2.0
+scipy>=1.14
+scikit-learn>=1.5
+razdel>=0.5
+pymorphy3>=2.0
+click>=8.1
+beautifulsoup4>=4.12

@@ -1,0 +1,104 @@
+{
+  "schema_version": "1.0",
+  "author": "chekhov",
+  "n_chunks": 229,
+  "chunk_words": 200,
+  "training_files": [
+    "01_skuchnaya_istoriya.txt",
+    "03_palata_6.txt",
+    "04_v_ovrage.txt"
+  ],
+  "excluded_files": [
+    "02_step.txt"
+  ],
+  "features": {
+    "avg_word_length": {
+      "mean": 4.9921989245371545,
+      "std": 0.2871436252702348
+    },
+    "word_length_std": {
+      "mean": 2.920722506524685,
+      "std": 0.26069789883026684
+    },
+    "avg_sentence_words": {
+      "mean": 14.412536152868649,
+      "std": 5.3966424002604025
+    },
+    "sentence_words_std": {
+      "mean": 9.915380635157103,
+      "std": 3.64000309766497
+    },
+    "lexical_diversity": {
+      "mean": 0.7428180374607528,
+      "std": 0.034398751289780975
+    },
+    "hapax_ratio": {
+      "mean": 0.6266426070951677,
+      "std": 0.04959616182167152
+    },
+    "pronoun_ratio": {
+      "mean": 0.07527536179580642,
+      "std": 0.03355675503355463
+    },
+    "conjunction_ratio": {
+      "mean": 0.11768775488108557,
+      "std": 0.023733945366614908
+    },
+    "preposition_ratio": {
+      "mean": 0.09546338734707134,
+      "std": 0.022580291476975798
+    },
+    "particle_ratio": {
+      "mean": 0.04459182936951893,
+      "std": 0.019054902282614767
+    },
+    "uppercase_ratio": {
+      "mean": 0.021691844973522414,
+      "std": 0.008911857184846954
+    },
+    "digit_ratio": {
+      "mean": 0.0004256322407193395,
+      "std": 0.0013281994046326093
+    },
+    "punctuation_per_100_words": {
+      "mean": 27.77402648958822,
+      "std": 6.9172040674614825
+    },
+    "commas_per_100_words": {
+      "mean": 13.988722075859828,
+      "std": 3.0126290657373582
+    },
+    "semicolons_per_100_words": {
+      "mean": 0.5792702731964343,
+      "std": 0.6088509347355142
+    },
+    "colons_per_100_words": {
+      "mean": 0.6280630841964705,
+      "std": 0.6051126136308361
+    },
+    "questions_per_100_sentences": {
+      "mean": 7.008551736404148,
+      "std": 8.671780208711674
+    },
+    "exclamations_per_100_sentences": {
+      "mean": 10.695773094134795,
+      "std": 13.578662383165982
+    },
+    "ellipses_per_100_sentences": {
+      "mean": 7.346308760619239,
+      "std": 9.277068735897558
+    },
+    "dashes_per_100_sentences": {
+      "mean": 31.03204779813936,
+      "std": 23.706173908759283
+    },
+    "paragraphs_per_100_words": {
+      "mean": 2.542062145873182,
+      "std": 1.7133677185664895
+    },
+    "repeated_word_ratio": {
+      "mean": 0.2571819625392472,
+      "std": 0.03439875128978096
+    }
+  }
+}
